@@ -20,7 +20,8 @@ The user can access to the following functions:
 
 ### int init(int id)
 Initialize the multiplexer.
-- id: I2C address.   
+- id: I2C address.
+
 Return -1 if an error occurs, otherwise return 0.
 
 ### void set_channel(uint8_t channel)
