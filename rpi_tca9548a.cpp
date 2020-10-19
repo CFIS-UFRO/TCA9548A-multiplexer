@@ -4,13 +4,8 @@ Author: Bryan Casanelli - bryancasanelli@gmail.com
 */
 
 #include "rpi_tca9548a.h"
-#ifndef __arm__
-  #include "fake_wiringPiI2C.h"
-  #include "fake_wiringPi.h"
-#else
-  #include <wiringPiI2C.h>
-  #include <wiringPi.h>
-#endif
+#include <wiringPiI2C.h>
+#include <wiringPi.h>
 
 rpi_tca9548a::rpi_tca9548a(){
   wiringPiSetup();
