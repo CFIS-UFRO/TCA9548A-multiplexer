@@ -7,7 +7,7 @@ main.cpp:
 #include "rpi_tca9548a.h"
 
 int main(void){
-  rpi_tca9548a tca;
+	rpi_tca9548a tca;
 	tca.init(0x70);
 	tca.set_channel(1);
 }
