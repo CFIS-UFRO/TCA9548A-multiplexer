@@ -29,5 +29,5 @@ Set the channel.
 - channel: channel from 1 to 8.
 
 ### void no_channel()
-Set no chanel.
+Set no channel.
 
