@@ -13,7 +13,7 @@ int main(void){
 }
 ```
 To compile: g++ main.cpp rpi_tca9548a.h rpi_tca9548a.cpp -o main -lwiringPi   
-The previous code changes the channel to the number 1 (of 8), so while the main function is running you can use the device connected to the 1st channel of the multiplexer (for example initializing it with the wiringPi library using the expected I2C address of the device).
+The previous code changes the channel to the number 2 (of 8), so while the main function is running you can use the device connected to the 1st channel of the multiplexer (for example initializing it with the wiringPi library using the expected I2C address of the device).
 
 # Available functions
 The user can access to the following functions:
@@ -26,7 +26,7 @@ Return -1 if an error occurs, otherwise return 0.
 
 ### void set_channel(uint8_t channel)
 Set the channel.
-- channel: channel from 1 to 8.
+- channel: channel from 0 to 7.
 
 ### void no_channel()
 Set no channel.
